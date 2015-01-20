@@ -16,3 +16,8 @@ console.log(word.lintwese + " [" +word.latin + "]");
 ```
 
 In order to print `word.lintwese` correctly, you should use [lintw.font](https://github.com/nkymtky/lintw.font).
+
+# Lintwese to English
+An test of overlap.
+
+http://nkymtky.github.io/lintw.lang/overlap-test.html
