@@ -25,10 +25,10 @@
 					var en = enList[i];
 					if (en.length == 0) continue;
 					
-					var li = lintw.lang.getWord(word);
+					var li = lintw.lang.getWord(en);
 					
-					if (result[li.lintwese] != null) { result[li.lintwese].push(word); }
-					else { result[li.lintwese] = [ word ]; }
+					if (result[li.lintwese] != null) { result[li.lintwese].push(en); }
+					else { result[li.lintwese] = [ en ]; }
 				}
 				
 				// 結果のキー(lintwese)一覧をソートする
