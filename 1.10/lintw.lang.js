@@ -228,6 +228,7 @@ global.lintw.lang = ( function ()
 			// 発音を求める
 			for(var i = 0; i < ret.lintwese.length; i++) {
 			
+				console.log(ret.lintwese);
 				ret.latin += latin_db[ret.lintwese.charAt(i)];
 			}
 				
