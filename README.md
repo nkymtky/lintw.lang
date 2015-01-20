@@ -1,5 +1,6 @@
 # lintw.lang
 What do you call the word in Lintw?
+http://nkymtky.github.io/lintw.lang/
 
 # How to use
 ## Load the library
