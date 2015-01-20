@@ -163,7 +163,6 @@ global.lintw.lang = ( function ()
 			seed = seed.replace(/\s+$/g, "");
 			
 			var ret = { lintwese : "", latin : "" };
-			console.log(ret.lintwese);
 			
 			// 10進数 → Lintw8進数に変換する
 			// 桁数が2の倍数になるように0で埋める
@@ -225,11 +224,14 @@ global.lintw.lang = ( function ()
 					}
 				}
 			}
+			else {
+			
+				return
+			}
 			
 			// 発音を求める
 			for(var i = 0; i < ret.lintwese.length; i++) {
 			
-				console.log(ret.lintwese);
 				ret.latin += latin_db[ret.lintwese.charAt(i)];
 			}
 				
