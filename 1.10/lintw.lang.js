@@ -163,6 +163,7 @@ global.lintw.lang = ( function ()
 			seed = seed.replace(/\s+$/g, "");
 			
 			var ret = { lintwese : "", latin : "" };
+			console.log(ret.lintwese);
 			
 			// 10進数 → Lintw8進数に変換する
 			// 桁数が2の倍数になるように0で埋める
