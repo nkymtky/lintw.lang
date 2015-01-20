@@ -67,6 +67,7 @@ global.lintw.lang = ( function ()
 		"lintwese" : "りとすば",
 		"theater" : "あかべ", "place" : "あかべ",
 		"moon" : "り", "star" : "と",
+		"morning" : "みべ", "afternoon" : "びざぁ", "evening" : "ひべど", "night" : "そせ",
 		"human" : "ぽ", "people" : "ぽ",
 		"language" : "すば",
 		"up" : "さ", "top" : "さ",
