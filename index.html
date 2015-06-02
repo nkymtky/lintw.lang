@@ -4,37 +4,33 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<title>Lintwese</title>
-	<script src="./1.10/lintw.lang.js"></script>
+	<script src="1.20/lintw.lang.js"></script>
 	<script type="text/javascript">
-	function cv()
-	{
-		function wordBlock(seed, li, la) {
-		
-			return "<div class='word-block'><p class='latin'>" +seed+ "</p><p class='lintwese'>" +li+ "</p><p class='latin'>" +la+ "</p></div>";
+	function cv() {
+		function wordBlock(word) {
+			return "<div><p class='latin'>" +word.seed+
+			       "</p><p class='lintwese'>" +word.lintwese+
+			       "</p><p class='latin'>" +word.latin+ "</p></div>";
 		}
+		var seedText = document.form1.textarea1.value;
+		var words = lintw.lang.getText(seedText);
 		
-		var l, p;
-		var str = document.form1.textarea1.value;
-		var arr = str.split( /\s+/g );
-		var html = wordBlock("　", "・", "　");
-		var withDot = "・";
-		var withoutDot = "";
-		for(var i = 0; i < arr.length; i++) 
-		{
-			if (arr[i].length == 0) continue;
-			
-			var ret = lintw.lang.getWord(arr[i]);
-			
-			html += wordBlock(arr[i], ret.lintwese, ret.latin);
-			html += wordBlock("　", "・", "　");
-			withDot += ret.lintwese;
-			withDot += "・";
-			withoutDot += ret.lintwese;
+		var html = "";
+		var withDot = "";
+		var latinOnly = "";
+		
+		for(var i = 0; i < words.length; i++) {
+		
+			var word = words[i];
+			html += wordBlock(word);
+			withDot += word.lintwese;
+			latinOnly += word.latin;
 		}
 		
 		document.getElementById("result1").innerHTML = html;
 		document.getElementById("result2").innerHTML = withDot;
-		document.getElementById("result3").innerHTML = withoutDot;
+		document.getElementById("result3").innerHTML = withDot.replace(/・/g, "");
+		document.getElementById("result4").innerHTML = latinOnly;
 	}
 	</script> 
 </head>
@@ -43,18 +39,20 @@
 	<h3>Put the English words</h3>
 	<div class="container">
 		<form name="form1">
-			<textarea name="textarea1" title="Input Words"  style="width:100%; height:120px;" onchange="cv();" onkeyup="cv();"></textarea>
+			<textarea name="textarea1" class="latin" title="Input Words"  style="width:100%; height:120px;" onchange="cv();" onkeyup="cv();"></textarea>
 		</form>
 	</div>
 	
 	<h3>Those expressions in Lintwese</h3>
-	<div id="result1" class="container"></div>
+	<div id="result1" class="container word-blocks"></div>
 	<hr />
 	<h3>For Ctrl + C, with dots</h3>
 	<div id="result2" class="container lintwese" style="font-size:16px;"></div>
 	<hr />
 	<h3>Without dots</h3>
 	<div id="result3" class="container lintwese" style="font-size:16px;"></div>
+	<h3>Pronunciation only</h3>
+	<div id="result4" class="container latin" style="font-size:16px;"></div>
 	
 </body>
 </html>

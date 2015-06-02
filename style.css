@@ -43,10 +43,16 @@ h3 {
 	line-height : 1.25;
 }
 
-.word-block {
-
-	padding : 8px 0px;
+.word-blocks div {
+	vertical-align : top;
 	display : inline-block;
+	padding : 8px 0px;
+	text-align : middle;
+}
+
+.word-blocks p {
+	line-height : 1.2em;
+	min-height : 1.2em;
 	text-align : center;
 }
 
@@ -59,7 +65,7 @@ h3 {
 
 .latin {
 
-	font-size : 18px;
+	font-size : 14px;
 	font-weight : normal;
 	font-family : "Meiryo", Sans-Serif;
 }
