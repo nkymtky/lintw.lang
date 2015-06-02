@@ -36,23 +36,34 @@
 </head>
 <body>
 
-	<h3>Put the English words</h3>
 	<div class="container">
+		<h3>Put the English words</h3>
 		<form name="form1">
-			<textarea name="textarea1" class="latin" title="Input Words"  style="width:100%; height:120px;" onchange="cv();" onkeyup="cv();"></textarea>
+			<textarea name="textarea1" class="latin" title="Input Words" cols="4" onchange="cv();" onkeyup="cv();"></textarea>
 		</form>
 	</div>
 	
-	<h3>Those expressions in Lintwese</h3>
-	<div id="result1" class="container word-blocks"></div>
-	<hr />
-	<h3>For Ctrl + C, with dots</h3>
-	<div id="result2" class="container lintwese" style="font-size:16px;"></div>
-	<hr />
-	<h3>Without dots</h3>
-	<div id="result3" class="container lintwese" style="font-size:16px;"></div>
-	<h3>Pronunciation only</h3>
-	<div id="result4" class="container latin" style="font-size:16px;"></div>
+	<div class="container">
+		<h3>Those expressions in Lintwese</h3>
+		<div id="result1" class="word-blocks"></div>
+	</div>
+	
+	<div class="container">
+		<h3>For Ctrl + C, with dots</h3>
+		<div id="result2" class="lintwese"></div>
+	</div>
+	
+	<div class="container">
+		<h3>Without dots</h3>
+		<div id="result3" class="lintwese"></div>
+	</div>
+	
+	<div class="container">
+		<h3>Pronunciation only</h3>
+		<div id="result4" class="latin"></div>
+	</div>
+	
+	</div>
 	
 </body>
 </html>

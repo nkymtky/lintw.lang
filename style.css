@@ -1,70 +1,67 @@
 @charset "utf-8";
 
 @font-face {
-
     font-family : "LintwBasic";
     src : url("./LintwBasic/1.10/LintwBasic.ttf") format("TrueType"),
           url("./LintwBasic/1.10/LintwBasic.woff") format("Woff");
 }
-
+* {
+	box-sizing : border-box;
+}
 body {
-
 	font-family : "Times New Roman", Serif;
 	padding : 24px;
-	line-height : 1;
+	line-height : 1em;
 	background-color : #f9f9f2;
 }
-
-p {
-
+.container {
+	margin : 8px 0px;
+	padding : 0px;
+	line-height : 1.25;
+	border : 1px solid #bbb3aa;
+}
+.container * {
 	margin : 0px;
 	padding : 0px;
+	line-height : 1.25;
 }
-
-hr {
-
-	margin : 24px 0px 0px 0px;
-	padding : 0px;
-	border-width : 0px;
-	border-bottom : 1px solid #bbb3aa;
-}
-
-h3 {
-
+.container h3 {
 	margin : 0px;
 	padding : 8px 12px;
 	font-size : 24px;
 	background-color : #f0f0ea;
 }
-
-.container {
-
-	margin : 8px 0px;
-	line-height : 1.25;
+.container div {
+	padding : 8px;
 }
-
+.container form {
+	padding : 0px 4px;
+}
+.container textarea {
+	width : 100%;
+	box-sizing: border-box;
+	margin : 0px;
+	padding : 2px;
+}
 .word-blocks div {
-	vertical-align : top;
+	margin : 0px;
+	padding : 0px;
 	display : inline-block;
-	padding : 8px 0px;
 	text-align : middle;
+	vertical-align : top;
 }
-
 .word-blocks p {
 	line-height : 1.2em;
 	min-height : 1.2em;
 	text-align : center;
 }
-
 .lintwese {
-
 	font-size : 32px;
 	font-weight : normal;
 	font-family : "LintwBasic";
 }
 
 .latin {
-
 	font-size : 14px;
 	font-weight : normal;
 	font-family : "Meiryo", Sans-Serif;
