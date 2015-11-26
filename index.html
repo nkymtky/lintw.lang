@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<title>Lintwese</title>
-	<script src="1.20/lintw.lang.js"></script>
+	<script src="1.30/lintw.lang.js"></script>
 	<script type="text/javascript">
 	function cv() {
 		function wordBlock(word) {
@@ -14,25 +14,25 @@
 		}
 		var seedText = document.form1.textarea1.value;
 		var words = lintw.lang.getText(seedText);
-		
+
 		var html = "";
 		var withDot = "";
 		var latinOnly = "";
-		
+
 		for(var i = 0; i < words.length; i++) {
-		
+
 			var word = words[i];
 			html += wordBlock(word);
 			withDot += word.lintwese;
 			latinOnly += word.latin;
 		}
-		
+
 		document.getElementById("result1").innerHTML = html;
 		document.getElementById("result2").innerHTML = withDot;
-		document.getElementById("result3").innerHTML = withDot.replace(/・/g, "");
+		document.getElementById("result3").innerHTML = withDot.replace(/点/g, "");
 		document.getElementById("result4").innerHTML = latinOnly;
 	}
-	</script> 
+	</script>
 </head>
 <body>
 
@@ -42,28 +42,28 @@
 			<textarea name="textarea1" class="latin" title="Input Words" cols="4" onchange="cv();" onkeyup="cv();"></textarea>
 		</form>
 	</div>
-	
+
 	<div class="container">
 		<h3>Those expressions in Lintwese</h3>
 		<div id="result1" class="word-blocks"></div>
 	</div>
-	
+
 	<div class="container">
 		<h3>For Ctrl + C, with dots</h3>
 		<div id="result2" class="lintwese"></div>
 	</div>
-	
+
 	<div class="container">
 		<h3>Without dots</h3>
 		<div id="result3" class="lintwese"></div>
 	</div>
-	
+
 	<div class="container">
 		<h3>Pronunciation only</h3>
 		<div id="result4" class="latin"></div>
 	</div>
-	
+
 	</div>
-	
+
 </body>
 </html>
