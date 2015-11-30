@@ -86,6 +86,7 @@ global.lintw.lang = ( function ()
 		"question" : "ほ", "/question" : "んね",
 		"wish" : "ねま", "/wish" : "をむ",
 		"hope" : "ねま", "/hope" : "をむ",
+		"congratulate" : "こざば", "/congratulate" : "うらびご",
 	};
 
 	var VAL_MAX = 9999943;
