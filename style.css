@@ -2,8 +2,8 @@
 
 @font-face {
     font-family : "LintwBasic";
-    src : url("./LintwBasic/1.10/LintwBasic.ttf") format("TrueType"),
-          url("./LintwBasic/1.10/LintwBasic.woff") format("Woff");
+    src : url("./LintwBasic/1.12/LintwBasic.ttf") format("TrueType"),
+          url("./LintwBasic/1.12/LintwBasic.woff") format("Woff");
 }
 * {
 	box-sizing : border-box;
