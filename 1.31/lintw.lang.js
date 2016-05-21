@@ -236,9 +236,9 @@ global.lintw.lang = ( function ()
 
 		var ret = [];
 		var seeds = seedSentence.split( /\s*[- ]\s*/g ) || [];
-		console.log(seeds);
+		// console.log(seeds);
 		var splitChars = seedSentence.match( /\s*[- ]\s*/g ) || [];
-		console.log(splitChars);
+		// console.log(splitChars);
 		splitChars.push(" ");
 
 		for(var i = 0; i < seeds.length; i++) {
@@ -261,6 +261,8 @@ global.lintw.lang = ( function ()
 	function convertText(seedText) {
 
 		var ret = [];
+		seedText = seedText.replace(/\r\n/g, " ");
+		seedText = seedText.replace(/\n/g, " ");
 		var seedSentences = seedText.split( /\s*[!.]\s*/g ) || [];
 		var splitChars = seedText.match( /[!.]/g ) || [];
 		splitChars.push(".");
@@ -290,7 +292,7 @@ global.lintw.lang = ( function ()
 				ret.push( { seed : "!", lintwese : "！", latin : "! " } );
 			}
 			else {
-				ret.push( { seed : ".", lintwese : "点", latin : ". " } );
+				ret.push( { seed : ". ", lintwese : "点", latin : ". " } );
 			}
 		}
 		/*
