@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<title>Lintwese</title>
-	<script src="./1.10/lintw.lang.js"></script>
+	<script src="./1.31/lintw.lang.js"></script>
 	<script type="text/javascript">
 		
 	var lintw_char_song = "りらづされぐつげ"+
@@ -35,10 +35,10 @@
 					var en = enList[i];
 					if (en.length == 0) continue;
 					
-					var li = lintw.lang.getWord(en);
+					var ret = lintw.lang.convertWord(en);
 					
-					if (result[li.lintwese] != null) { result[li.lintwese].push(en); }
-					else { result[li.lintwese] = [ en ]; }
+					if (result[ret.lintwese] != null) { result[ret.lintwese].push(en); }
+					else { result[ret.lintwese] = [ en ]; }
 				}
 				
 				// 結果のキー(lintwese)一覧をソートする
