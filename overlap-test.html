@@ -35,7 +35,7 @@
 					var en = enList[i];
 					if (en.length == 0) continue;
 					
-					var ret = lintw.lang.convertWord(en);
+					var ret = lintw.lang.getWord(en);
 					
 					if (result[ret.lintwese] != null) { result[ret.lintwese].push(en); }
 					else { result[ret.lintwese] = [ en ]; }
