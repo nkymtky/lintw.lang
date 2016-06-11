@@ -68,6 +68,7 @@ global.lintw.lang = ( function ()
 		"morning" : "みべ", "afternoon" : "びざぁ", "evening" : "ひべど", "night" : "そせ",
 		"human" : "ぽ", "people" : "ぽ",
 		"language" : "すば",
+		"hello" : "よどぽぴ",
 		"up" : "さ", "top" : "さ",
 		"bottom" : "ぴ", "down" : "ぴ",
 		"left" : "い",
