@@ -219,15 +219,16 @@ global.lintw.lang = ( function ()
 			}
 		}
 		else {
+			ret.lintwese = seed;
 
-			return ret;
+			// return ret;
 			// throw new Error("unknown seed type");
 		}
 
 		// 発音を求める
 		for(var i = 0; i < ret.lintwese.length; i++) {
-
-			ret.latin += latin_db[ret.lintwese.charAt(i)];
+			var latin = latin_db[ret.lintwese.charAt(i)];
+			if (latin != null) { ret.latin += latin; }
 		}
 
 		return ret;
