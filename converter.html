@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="converter.css">
+	<title>Lintwese Converter</title>
+	<script src="converter/1.31/lintw.lang.js"></script>
+	<script src="converter.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h3>Put the English words</h3>
+		<form name="form1">
+			<textarea name="textarea1" class="latin" title="Input Words" cols="4"
+			          onchange="cv();" onkeyup="cv();"></textarea>
+		</form>
+	</div>
+
+	<div class="container">
+		<h3>Those expressions in Lintwese</h3>
+		<div id="result1" class="word-blocks"></div>
+	</div>
+
+	<div class="container">
+		<h3>For Ctrl + C, with dots</h3>
+		<div id="result2" class="lintwese"></div>
+	</div>
+
+	<div class="container">
+		<h3>Without dots</h3>
+		<div id="result3" class="lintwese"></div>
+	</div>
+
+	<div class="container">
+		<h3>Pronunciation only</h3>
+		<div id="result4" class="latin"></div>
+	</div>
+
+</body>
+</html>

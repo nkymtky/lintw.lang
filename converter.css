@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "LintwBasicWeb";
+    src: url("font/LintwBasic/1.20/LintwBasic.woff") format("Woff");
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Times New Roman", Serif;
+	padding: 24px;
+	line-height: 1em;
+	background-color: #f9f9f2;
+}
+.container {
+	margin: 8px 0px;
+	padding: 0px;
+	line-height: 1.25;
+	border: 1px solid #bbb3aa;
+}
+.container * {
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.25;
+}
+.container h3 {
+	margin: 0px;
+	padding: 8px 12px;
+	font-size: 24px;
+	background-color: #f0f0ea;
+}
+.container div {
+	padding: 8px;
+}
+.container form {
+	padding: 0px 4px;
+}
+.container textarea {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 2px;
+}
+.word-blocks div {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	text-align: middle;
+	vertical-align: top;
+}
+.word-blocks p {
+	line-height: 1.2em;
+	min-height: 1.2em;
+	text-align: center;
+}
+.lintwese {
+	font-size: 32px;
+	font-weight: normal;
+	font-family: "LintwBasicWeb";
+}
+.latin {
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Meiryo", Sans-Serif;
+}
